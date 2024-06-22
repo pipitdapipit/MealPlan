@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #081b29;
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: .3s;
+}
+
+.header.sticky {
+    background-color: #081b20;
+    padding: 32px;
+}
+
+.logo {
+    width: 15%;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 100px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+}
+
+
+.landings {
+    background-image: url('/img/healthy-organic-tofu-rice-buddha-bowl-with-veggies.jpg');
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+    padding: 0 0 300px;
+    /* border: 2px solid #00abf0; */
+}
+
+.landing {
+    align-items: center;
+    margin-top: 10%;
+    padding-bottom: -10%;
+    margin-bottom: -10%;
+    justify-content: center;
+    /* border: 2px solid #00abf0; */
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+h2 {
+    color: #00abf0;
+}
+
+.landing button {
+    background-color: #081b29;
+    border-color: #00abf0;
+    color: #00abf0;
+    border-radius: 10px;
+    width: 70%;
+    /* font-size: medium; */
+}
+
+.landing button:hover {
+    background-color: #00abf0;
+    border-color: #081b29;
+    color: #081b29;
+}
+
+.rotw {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 30px 50px;
+}
+
+.rotw-header img {
+    width: 80%;
+    border-radius: 15px;
+}
+
+.rotw-text {
+    color: white;
+}
+
+.text button {
+    background-color: #081b29;
+    color: #00abf0;
+    border-color: #00abf0;
+    border-radius: 15px;
+    width: 150px;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+}
+
+.text button:hover {
+    background-color: #00abf0;
+    color: #081b29;
+    border-color: #081b29;
+}
+
+.list-wrapper {
+    margin: 0 30px;
+    color: white;
+}
+
+.list-wrapper2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.lists img {
+    width: 300px;
+    height: 175px;
+    border-radius: 30px;
+}
+
+.lists .texts {
+    padding: 10px;
+}
+
+.lists {
+    color: white;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #00abf0;
+    border-radius: 30px;
+    margin: 0 10px;
+    padding: 25px 25px;
+}
+
+.lists h3 {
+    color: #00abf0;
+    font-size: x-large;
+}
+
+.lists h5 {
+    font-size: large;
+}
+
+.lists p {
+    margin-bottom: 30px;
+}
+
+.texts button {
+    background-color: #081b29;
+    border-color: #00abf0;
+    color: #00abf0;
+    border-radius: 10px;
+    width: 70%;
+    font-size: medium;
+    padding: 10px;
+}
+
+.texts button:hover {
+    background-color: #00abf0;
+    border-color: #081b29;
+    color: #081b29;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    color: white;
+}
+
+.home-sci {
+    cursor: pointer;
+    position: absolute;
+    bottom: 30;
+    left: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin-right: 30px;
+}
+
+.home-sci a:hover {
+    color: #081b29;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
